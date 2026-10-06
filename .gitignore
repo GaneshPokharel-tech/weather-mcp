@@ -9,3 +9,4 @@ wheels/
 # Virtual environments
 .venv
 .env
+.gmail_token.json

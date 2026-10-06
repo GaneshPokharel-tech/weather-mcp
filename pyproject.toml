@@ -1,24 +1,27 @@
 [project]
-name = "weather-mcp"
+name = "multi-mcp-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multi-MCP agent using LangGraph, LangChain, Gemini, and MCP servers"
 readme = "README.md"
 authors = [
     { name = "Ganesh Pokharel", email = "246271712+GaneshPokharel-tech@users.noreply.github.com" }
 ]
 requires-python = ">=3.12"
+
 dependencies = [
-    "dotenv>=0.9.9",
+    "google-api-python-client>=2.201.0",
+    "google-auth-httplib2>=0.4.4",
+    "google-auth-oauthlib>=1.5.0",
     "httpx>=0.28.1",
     "langchain-google-genai>=4.4.0",
     "langchain[mcp]>=1.4.0",
-    "mcp[cli]>=2.2.0",
+    "langgraph>=1.2.12",
+    "mcp[cli]>=2.3.0",
     "python-dotenv>=1.2.3",
 ]
 
-[project.scripts]
-weather-mcp = "weather_mcp:main"
-
 [build-system]
-requires = ["uv_build>=0.12.17,<0.13.0"]
+requires = [
+    "uv_build>=0.12.17,<0.13.0",
+]
 build-backend = "uv_build"

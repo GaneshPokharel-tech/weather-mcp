@@ -85,7 +85,7 @@ WeatherAPI.com
 ## Project Structure
 
 ```text
-weather-mcp/
+multi-mcp-agent/
 │
 ├── .env
 ├── .gitignore
@@ -94,7 +94,7 @@ weather-mcp/
 ├── uv.lock
 │
 └── src/
-    └── weather_mcp/
+    └── multi_mcp_agent/
         ├── __init__.py
         ├── server.py
         ├── client.py
@@ -369,7 +369,7 @@ uv add langchain-google-genai
 Run:
 
 ```bash
-uv run mcp dev src/weather_mcp/server.py
+uv run mcp dev src/multi_mcp_agent/server.py
 ```
 
 Then open MCP Inspector.
@@ -395,7 +395,7 @@ Prompt
 Run:
 
 ```bash
-uv run python src/weather_mcp/client.py
+uv run python src/multi_mcp_agent/client.py
 ```
 
 Example:
@@ -424,7 +424,7 @@ Provide a concise weather report for Kathmandu...
 Run:
 
 ```bash
-uv run python src/weather_mcp/langchain_client.py
+uv run python src/multi_mcp_agent/langchain_client.py
 ```
 
 Example:
