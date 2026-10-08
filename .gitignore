@@ -1,12 +1,33 @@
-# Python-generated files
+# Python cache / build
 __pycache__/
-*.py[oc]
+*.py[cod]
+*.egg-info/
 build/
 dist/
 wheels/
-*.egg-info
+.pytest_cache/
+.ruff_cache/
 
-# Virtual environments
-.venv
+# Virtual environment
+.venv/
+
+# Secrets / local credentials
 .env
 .gmail_token.json
+.calendar_token.json
+
+# LangGraph local persistence
+.langgraph_checkpoints.sqlite
+.langgraph_checkpoints.sqlite-shm
+.langgraph_checkpoints.sqlite-wal
+
+# Local RAG data
+.rag/
+
+# Local editor / OS files
+.vscode/
+.DS_Store
+
+# Temporary backups
+*.bak
+*.prompt-backup
